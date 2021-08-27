@@ -25,9 +25,6 @@ let theme = createTheme({
       },
     },
   },
-  typography: {
-    fontFamily: ["Inter", "sans-serif"].join(","),
-  },
 
   overrides: {
     MuiCssBaseline: {
@@ -40,6 +37,7 @@ let theme = createTheme({
         body: {
           margin: "0",
           color: "white",
+          backgroundColor: "white",
         },
         ".link": {
           textDecoration: "none",

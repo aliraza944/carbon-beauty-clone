@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 
     width: "3.75rem",
     height: "3.75rem",
-    marginLeft: "100px",
   },
   cartshipping: {
     display: "flex",
@@ -70,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   search: {
-    marginLeft: "2em",
+    marginLeft: "1em",
   },
   navelements: {
     "& > div": {
@@ -81,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   topbar: {
-    width: "30px",
+    width: "20px",
   },
   bottombar: {
     width: "15px",

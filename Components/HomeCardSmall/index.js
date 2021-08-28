@@ -16,7 +16,7 @@ const HomeCardSmall = () => {
         src={img1}
         layout="responsive"
         width={400}
-        height={400}
+        height={550}
         className={classes.cardimage}
       />
       {showhover && (

@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
   },
   cardimage: {
     width: "100%",
-    height: "100%",
+    // height: "100%",
+    objectFit: "cover",
   },
   hoverdiv: {
     position: "absolute",
@@ -21,21 +22,19 @@ const useStyles = makeStyles((theme) => ({
     opacity: "0.7",
   },
   content: {
-    margin: "2em 0em 0 2em ",
+    margin: "2em 0em 0 1em ",
   },
   catagory: {
     position: "absolute",
     top: "50%",
-    // right: "0",
     left: "0.5em",
-    // transform: "translate(-50%, 0)",
-    // margin: "auto",
+
     textDecoration: "underLine",
   },
   nameandprice: {
     position: "absolute",
     bottom: "5%",
-    left: "2em",
+    left: "1em",
     width: "85%",
   },
 }));

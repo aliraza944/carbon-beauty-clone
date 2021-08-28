@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
     width: "20px",
   },
   bottombar: {
-    width: "15px",
+    width: "10px",
   },
 }));
 export default useStyles;

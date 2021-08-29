@@ -2,7 +2,7 @@ import Head from "next/head";
 import Navigation from "../Components/Navigation";
 import Hero from "../Components/Hero";
 import HomeSmallCardSection from "../Components/HomeSmallCardSection";
-
+import FeaturedProductCard from "../Components/FeaturedProductCard";
 export default function Home() {
   return (
     <div>
@@ -15,6 +15,8 @@ export default function Home() {
       <Navigation />
       <Hero />
       <HomeSmallCardSection />
+
+      <FeaturedProductCard brands />
     </div>
   );
 }

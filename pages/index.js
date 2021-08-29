@@ -2,7 +2,10 @@ import Head from "next/head";
 import Navigation from "../Components/Navigation";
 import Hero from "../Components/Hero";
 import HomeSmallCardSection from "../Components/HomeSmallCardSection";
-import FeaturedProductCard from "../Components/FeaturedProductCard";
+import IngredientSection from "../Components/IngredientSection";
+import { data } from "../Components/IngredientSection/data";
+import { branddata } from "../Components/IngredientSection/branddata";
+
 export default function Home() {
   return (
     <div>
@@ -15,8 +18,8 @@ export default function Home() {
       <Navigation />
       <Hero />
       <HomeSmallCardSection />
-
-      <FeaturedProductCard brands />
+      <IngredientSection data={data} />
+      <IngredientSection brand data={branddata} />
     </div>
   );
 }

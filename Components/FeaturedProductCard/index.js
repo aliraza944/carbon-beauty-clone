@@ -8,7 +8,7 @@ const FeaturedProductCard = (props) => {
   return (
     <div className={classes.root}>
       <div className={classes.imgcontainer}>
-        <Image src={img1} layout="responsive" width={300} height={200} />
+        <Image src={props.img} layout="responsive" width={300} height={200} />
       </div>
       <div
         className={classes.content}
@@ -20,12 +20,10 @@ const FeaturedProductCard = (props) => {
           </Typography>
         )}
         <Typography variant="h4" className={classes.title}>
-          Reishe
+          {props.title}
         </Typography>
         <Typography variant="body1" className={classes.description}>
-          A "supermushroom" that has been used for thousands of years in herbal
-          medicine, Reishi mushrooms are increasingly being studied for their
-          potential health benefits.
+          {props.description}
         </Typography>
         <div>
           <Button variant="contained" className={classes.browsebtn}>
@@ -36,7 +34,7 @@ const FeaturedProductCard = (props) => {
       {!props.brands && (
         <div className={classes.ingredientindex}>
           <div className={classes.letter}>
-            <Typography variant="h3"> R</Typography>
+            <Typography variant="h3"> {props.letter}</Typography>
           </div>
           <div className={classes.index}>
             {" "}

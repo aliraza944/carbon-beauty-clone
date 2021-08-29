@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 const useScroll = () => {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
@@ -9,5 +8,4 @@ const useScroll = () => {
   });
   return scroll;
 };
-
 export default useScroll;

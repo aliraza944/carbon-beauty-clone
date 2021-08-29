@@ -3,7 +3,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "95vw",
     overflow: "hidden",
-    padding: "12em 12em",
+    padding: "12em 12em 2em 12em",
     position: "relative",
     zIndex: "4",
   },

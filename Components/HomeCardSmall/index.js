@@ -1,9 +1,8 @@
 import Image from "next/image";
 import useStyles from "./Styles";
-import img1 from "../../public/Images/HomeCardSmall/img1.jpg";
 import { Typography } from "@material-ui/core";
 import { useState } from "react";
-const HomeCardSmall = () => {
+const HomeCardSmall = ({ img, title, productName, price }) => {
   const [showhover, setShowhover] = useState(false);
   const classes = useStyles();
   return (
@@ -13,7 +12,7 @@ const HomeCardSmall = () => {
       onMouseLeave={() => setShowhover(false)}
     >
       <Image
-        src={img1}
+        src={img}
         layout="responsive"
         width={400}
         height={550}
@@ -26,14 +25,14 @@ const HomeCardSmall = () => {
               2019 Fall Picks
             </Typography>
             <Typography variant="h6" className={classes.catagory}>
-              Plant Genius Melt Moisturizer
+              {title}
             </Typography>
             <div className={`justifyspacebetween ${classes.nameandprice}`}>
               <Typography variant="body1" className={classes.name}>
-                Alpyn Beauty
+                {productName}
               </Typography>
               <Typography variant="body1" className={classes.price}>
-                60.00$
+                ${price}
               </Typography>
             </div>
           </div>

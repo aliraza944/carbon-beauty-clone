@@ -13,9 +13,11 @@ const Hero = () => {
   });
   const heroStyle = {
     transform: `translateX(-${scroll * 1.5}px )`,
+    transition: `transform 0.5s linear`,
   };
   const springStyle = {
     transform: `translateX(-${scroll * 2.5}px )`,
+    transition: `transform 0.5s linear`,
   };
   return (
     <div className={classes.root}>

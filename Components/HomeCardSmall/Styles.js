@@ -5,8 +5,8 @@ const useStyles = makeStyles((theme) => ({
     minWidth: "100px",
     maxWidth: "300px",
     minHeight: "400px",
-    backgroundColor: "#f4f2f4",
-    margin: "400px 0 100px 0",
+    width: "100%",
+    margin: "0px 0 50px 0",
   },
   cardimage: {
     width: "100%",
@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     left: "0.5em",
 
     textDecoration: "underLine",
+    textTransform: "capitalize",
   },
   nameandprice: {
     position: "absolute",

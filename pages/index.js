@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Navigation from "../Components/Navigation";
 import Hero from "../Components/Hero";
-import HomeCardSmall from "../Components/HomeCardSmall";
+import HomeSmallCardSection from "../Components/HomeSmallCardSection";
+
 export default function Home() {
   return (
     <div>
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
       <Navigation />
       <Hero />
-      <HomeCardSmall />
+      <HomeSmallCardSection />
     </div>
   );
 }

@@ -7,11 +7,12 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "400px",
     width: "100%",
     margin: "0px 0 50px 0",
+    backgroundColor: "#f4f2f4",
   },
   cardimage: {
     width: "100%",
-    // height: "100%",
     objectFit: "cover",
+    mixBlendMode: "multiply",
   },
   hoverdiv: {
     position: "absolute",

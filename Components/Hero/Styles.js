@@ -1,10 +1,10 @@
 import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
-    // position: "absolute",
     margin: "25em 0 0 0",
     width: "80%",
     zIndex: 10,
+
     "& .MuiTypography-root": {
       color: "black",
       fontWeight: "800",

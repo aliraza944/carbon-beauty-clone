@@ -6,7 +6,6 @@ import useStyles from "./Styles";
 
 const IngredientSection = (props) => {
   const scroll = useScroll();
-
   const scrollStyle = {
     transform: `translateY(-${scroll * 0.2}px)`,
     transition: `transform 1s linear`,

@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     margin: "1em 0 0 0",
     padding: "0.5em 1em",
+    borderRadius: "0px",
   },
 }));
 export default useStyles;

@@ -5,6 +5,7 @@ import HomeSmallCardSection from "../Components/HomeSmallCardSection";
 import IngredientSection from "../Components/IngredientSection";
 import { data } from "../Components/IngredientSection/data";
 import { branddata } from "../Components/IngredientSection/branddata";
+import BlogSection from "../Components/BlogSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <HomeSmallCardSection />
       <IngredientSection data={data} />
       <IngredientSection brand data={branddata} />
+      <BlogSection />
     </div>
   );
 }

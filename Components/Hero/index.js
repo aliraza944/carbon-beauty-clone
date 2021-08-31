@@ -24,8 +24,6 @@ const Hero = () => {
       <Image
         src={heroimage}
         layout="responsive"
-        width={700}
-        height={475}
         className={classes.heroimage}
       />
       <div className={classes.carbonbeauty} style={heroStyle}>
@@ -34,7 +32,6 @@ const Hero = () => {
       <div className={classes.springpicks} style={springStyle}>
         <Typography variant="h1">Spring Picks</Typography>
       </div>
-      <div className={classes.fixedtext}></div>
     </div>
   );
 };

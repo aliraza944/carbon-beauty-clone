@@ -4,6 +4,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "25em 0 0 0",
     width: "80%",
     zIndex: 10,
+    overflowX: "hidden",
 
     "& .MuiTypography-root": {
       color: "black",
@@ -24,16 +25,10 @@ const useStyles = makeStyles((theme) => ({
   springpicks: {
     width: "100%",
     position: "fixed",
+
     left: "80%",
     top: "50%",
     zIndex: 3,
-  },
-  heroimage: {
-    width: "100%",
-  },
-  fixedtext: {
-    position: "fixed",
-    width: "100%",
   },
 }));
 export default useStyles;

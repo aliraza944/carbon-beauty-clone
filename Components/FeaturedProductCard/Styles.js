@@ -27,8 +27,18 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid black",
     borderRadius: "0px",
     boxShadow: "none",
-    padding: "0.5em 1em",
-    backgroundColor: "transparent",
+    backgroundImage:
+      "linear-gradient(90deg,  #fff 0%, #fff 49.6%, #000 50%, #000 100%)",
+    backgroundSize: "200%",
+    boxShadow: "none",
+    padding: "6px 16px",
+    transition:
+      "background-position .3s cubic-bezier(.47, .1, 1, .63),color .2s linear",
+    "&:hover": {
+      color: "white",
+      boxShadow: "none",
+      backgroundPosition: "-100% 100%",
+    },
   },
   title: {
     margin: "0 0 1em 0",

@@ -75,10 +75,20 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     top: "50%",
     right: "16%",
-    boxShadow: "none",
-    border: "2px solid black",
+    border: "1px solid black",
     borderRadius: "0px",
-    backgroundColor: "transparent",
+    backgroundImage:
+      "linear-gradient(90deg,  #fff 0%, #fff 50%, #000 50%, #000 100%)",
+    backgroundSize: "200%",
+    boxShadow: "none",
+    padding: "6px 16px",
+    transition:
+      "background-position .3s cubic-bezier(.47, .1, 1, .63),color .2s linear",
+    "&:hover": {
+      color: "white",
+      boxShadow: "none",
+      backgroundPosition: "-100% 100%",
+    },
   },
 }));
 export default useStyles;

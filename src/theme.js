@@ -58,6 +58,23 @@ let theme = createTheme({
           justifyContent: "space-around",
           alignItems: "center",
         },
+        ".styledbtn": {
+          width: "100%",
+          borderTop: "1px solid black",
+          borderRadius: "0px",
+          backgroundImage:
+            "linear-gradient(90deg,  #fff 0%, #fff 50%, #000 50%, #000 100%)",
+          backgroundSize: "200%",
+          boxShadow: "none",
+          padding: "6px 16px",
+          transition:
+            "background-position .3s cubic-bezier(.47, .1, 1, .63),color .2s linear",
+          "&:hover": {
+            color: "white",
+            boxShadow: "none",
+            backgroundPosition: "-100% 100%",
+          },
+        },
       },
     },
   },

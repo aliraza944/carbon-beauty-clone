@@ -6,6 +6,7 @@ import IngredientSection from "../Components/IngredientSection";
 import { data } from "../Components/IngredientSection/data";
 import { branddata } from "../Components/IngredientSection/branddata";
 import BlogSection from "../Components/BlogSection";
+import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <IngredientSection data={data} />
       <IngredientSection brand data={branddata} />
       <BlogSection />
+      <Footer />
     </div>
   );
 }

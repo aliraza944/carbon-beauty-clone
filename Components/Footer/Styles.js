@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     color: "black",
-    padding: "0 8em",
+    padding: "0 4em",
   },
   centercolumn: {
     width: "100%",

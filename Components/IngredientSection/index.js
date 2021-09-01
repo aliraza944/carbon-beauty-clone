@@ -1,8 +1,8 @@
 import { Typography } from "@material-ui/core";
-import { useState } from "react";
 import FeaturedProductCard from "../FeaturedProductCard";
 import useScroll from "../../Hooks/useScroll";
 import useStyles from "./Styles";
+import useSlider from "../../Hooks/useSlider";
 
 const IngredientSection = (props) => {
   const scroll = useScroll();
@@ -11,23 +11,7 @@ const IngredientSection = (props) => {
     transition: `transform 1s linear`,
   };
   const { data } = props;
-  const [slider, setSlider] = useState(0);
-
-  const prevSlide = () => {
-    if (slider === 0) {
-      setSlider(data.length - 1);
-    } else {
-      setSlider(slider - 1);
-    }
-  };
-
-  const nextSlide = () => {
-    if (slider === data.length - 1) {
-      setSlider(0);
-    } else {
-      setSlider(slider + 1);
-    }
-  };
+  const { slider, prevSlide, nextSlide } = useSlider(data);
 
   const classes = useStyles();
   return (
